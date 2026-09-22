@@ -700,3 +700,130 @@ small {
     background-position-x: 30%;
   }
 }
+
+/* Activity 6: Dark Mode */
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode main {
+  background: #121212 !important;
+}
+
+body.dark-mode .card,
+body.dark-mode .card-reveal,
+body.dark-mode ul.side-nav.fixed,
+body.dark-mode ul.side-nav.fixed li.logo,
+body.dark-mode nav {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .card .card-content p,
+body.dark-mode .card ul li,
+body.dark-mode .flow-text,
+body.dark-mode ul.side-nav.fixed.table-of-contents li:not(.logo) a span,
+body.dark-mode ul#slide-out li:not(.logo) a span {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode ul.table-of-contents li:not(.logo) a.active,
+body.dark-mode ul.table-of-contents li:not(.logo) a:hover {
+  background-color: #2c2c2c !important;
+}
+
+body.dark-mode a,
+body.dark-mode .teal-text {
+  color: #E8C5CE !important;
+}
+
+body.dark-mode .brown-text {
+  color: #d7ccc8 !important;
+}
+
+body.dark-mode .grey-text {
+  color: #b0bec5 !important;
+}
+
+body.dark-mode #experience .card-action {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+body.dark-mode .name-title span {
+  color: #e0e0e0 !important;
+}
+
+/* Fix Hero buttons in dark mode */
+body.dark-mode .readme {
+  background-color: #fff !important;
+  color: #6D1B36 !important;
+  border-color: #fff !important;
+}
+
+body.dark-mode .readme:hover {
+  background-color: #e0e0e0 !important;
+  border-color: #e0e0e0 !important;
+  color: #6D1B36 !important;
+}
+
+body.dark-mode .contactme {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.dark-mode .contactme:hover {
+  background-color: #2d2d2d !important;
+  color: #fff !important;
+  border-color: #555 !important;
+}
+
+/* Invert dark SVGs (logos) to white in dark mode */
+body.dark-mode img[src$=".svg"] {
+  filter: brightness(0) invert(1);
+}
+
+/* Hero Banner in Dark Mode */
+body.dark-mode #intro.section {
+  background: #1a0f14 repeat !important;
+}
+
+body.dark-mode #intro.section .typing {
+  color: #E8C5CE !important;
+}
+
+/* Floating Dark Mode Button */
+.theme-toggle-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+#dark-mode-toggle {
+  background-color: #6D1B36 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+#dark-mode-toggle:hover {
+  transform: scale(1.08);
+}
+
+#dark-mode-toggle i {
+  color: #fff !important;
+  font-size: 22px;
+  line-height: 56px;
+}
+
+body.dark-mode #dark-mode-toggle {
+  background-color: #E8C5CE !important;
+  color: #541228 !important;
+}
+
+body.dark-mode #dark-mode-toggle i {
+  color: #541228 !important;
+}

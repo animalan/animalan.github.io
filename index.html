@@ -19,7 +19,7 @@
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=1.1" />
   <title>Abhishek Nimalan | Software Developer</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -77,6 +77,13 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
   
+  <!-- Activity 6: Fixed Top-Right Dark Mode Toggle -->
+  <div class="theme-toggle-wrapper">
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode" class="btn-floating btn-large waves-effect waves-light">
+      <i id="theme-icon" class="fa fa-moon-o"></i>
+    </button>
+  </div>
+
   <!-- Navigation Menu-->
   <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
@@ -713,6 +720,14 @@
 
       // 5. Display remaining projects on button click
       document.getElementById("load-more-btn").onclick = showProjects;
+
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        var isDark = document.body.classList.contains("dark-mode");
+        document.getElementById("theme-icon").className = isDark ? "fa fa-sun-o" : "fa fa-moon-o";
+      }
+
+      document.getElementById("dark-mode-toggle").onclick = toggleDarkMode;
     });
   </script>
 </body>
